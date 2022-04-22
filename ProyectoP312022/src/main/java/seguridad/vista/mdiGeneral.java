@@ -48,6 +48,7 @@ public class mdiGeneral extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
+        jMenu9 = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -59,6 +60,8 @@ public class mdiGeneral extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jDesktopPane1.setToolTipText("");
+
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
@@ -69,6 +72,8 @@ public class mdiGeneral extends javax.swing.JFrame {
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 279, Short.MAX_VALUE)
         );
+
+        jMenuBar1.setToolTipText("josue rolando moran villeda 9959-20-1641");
 
         jMenu1.setText("Archivo");
         jMenuBar1.add(jMenu1);
@@ -103,7 +108,7 @@ public class mdiGeneral extends javax.swing.JFrame {
 
         jM_MantenimientopApps.setText("Procesos");
 
-        jMenuItem4.setText("Mantenimiento Perfil de Aplicacion");
+        jMenuItem4.setText("Mantenimiento Productos");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
@@ -118,6 +123,9 @@ public class mdiGeneral extends javax.swing.JFrame {
 
         jMenu8.setText("Ayudas");
         jMenuBar1.add(jMenu8);
+
+        jMenu9.setText("JOSUE ROLANDO MORAN VILLEDA 9959-20-1641");
+        jMenuBar1.add(jMenu9);
 
         setJMenuBar(jMenuBar1);
 
@@ -136,7 +144,11 @@ public class mdiGeneral extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-
+        frmMantenimientoProducto ventana = new frmMantenimientoProducto();
+        jDesktopPane1.add(ventana);
+        Dimension desktopSize = jDesktopPane1.getSize();
+        Dimension FrameSize = ventana.getSize();
+        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
@@ -218,6 +230,7 @@ public class mdiGeneral extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
